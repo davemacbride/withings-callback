@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Withings callback</title>
+</head>
+<body style="font-family:system-ui,sans-serif;padding:2rem">
+<p id="m">This is the Withings callback forwarder. Nothing to do here.</p>
+<script>
+var EXEC = https://script.google.com/macros/s/AKfycbwwJ3rMconab9TUA_Ol-sQ8uJworB5KlbUZiam3V_pQsrAyG-OpRZShtB41omkaoijN6A/exec;
+var q = location.search;
+var m = document.getElementById("m");
+if (EXEC.indexOf("https://script.google.com/macros/s/") !== 0) {
+  m.textContent = "Not configured: EXEC is not set to your Apps Script /exec URL.";
+} else if (q.indexOf("state=") > -1) {
+  m.textContent = "Connecting to Coach...";
+  location.replace(EXEC + q);
+}
+</script>
+</body>
+</html>
