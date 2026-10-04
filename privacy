@@ -1,0 +1,7 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Coach 5.0 Personal: Privacy</title></head>
+<body>
+<h1>Coach 5.0 Personal: Privacy</h1>
+<p>This is a single-user personal tool. It reads one person's resting heart rate, heart rate variability and sleep data from the Google Health API, using read-only access, and writes it to that person's own Google Sheet.</p>
+<p>The data is not shared with, sold to, or used by anyone else. Nothing is collected from any other user. Access can be revoked at any time at myaccount.google.com/permissions.</p>
+</body></html>
